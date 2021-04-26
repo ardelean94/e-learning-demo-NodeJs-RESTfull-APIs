@@ -1,3 +1,5 @@
 {
-    "jwtPrivateKey": ""
+    "jwtPrivateKey": "",
+    "db": "mongodb://localhost/eLearning",
+    "port": "5000"
 }

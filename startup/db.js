@@ -1,8 +1,11 @@
+const config = require('config');
 const winston = require('winston');
 const mongoose = require('mongoose');
 
 module.exports = function() {
-    mongoose.connect('mongodb://localhost/eLearning', { 
+    const db = config.get('db');
+
+    mongoose.connect(db, { 
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
